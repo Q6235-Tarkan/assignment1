@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100hv;
+  height: 100%;
+
+  background-image: linear-gradient(
+    to right,
+    #090027,
+    #6d0841ef,
+    #5b3b7e,
+    #3577b0,
+    #0873f6
+  );
+}
+
+h1 {
+  font-size: 5em;
+  font-family: "Rubik Vinyl", cursive;
+  letter-spacing: 1rem;
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  color: #ff505c;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+    0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  letter-spacing: 0.2rem;
+}
+
+p {
+  color: aliceblue;
+  margin-top: 10px;
+  font-family: "caveat";
+  font-size: 1.5rem;
+  text-indent: 30px;
+}
+a {
+  background-color: white;
+  float: right;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 9px;
+  font-family: "nosifer";
+  font-size: 12px;
+  color: #ff505c;
+  line-height: 1;
+  text-decoration: none;
+}
+
+a:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: crimson;
+  transition: width 0.3s ease-in-out;
+}
+
+a:hover:after,
+a:focus:after {
+  width: 100%;
+  padding: 1px;
+}
+
+.main-box {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.box {
+  background-color: #ffffff38;
+  padding: 16px;
+  margin: 15px 0;
+  border-radius: 20px;
+  text-align: justify;
+  width: 90%;
+  box-shadow: 10px 10px 5px rgba(0, 13, 128, 0.338);
+}
+
+img {
+  width: 448px;
+  height: 215px;
+  float: left;
+  margin-right: 7px;
+}
+
+img:hover {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 600px) {
+  img {
+    width: 30%;
+    height: 20%;
+    margin-right: 20px;
+  }
+}
